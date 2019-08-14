@@ -14,5 +14,7 @@ typedef void(^MyAdvertisementViewActionBlock)(UIButton *sender);
 
 @property (nonatomic,copy) MyAdvertisementViewActionBlock actionBlock;
 
+@property (nonatomic,strong) NSString *title;
+
 @end
 

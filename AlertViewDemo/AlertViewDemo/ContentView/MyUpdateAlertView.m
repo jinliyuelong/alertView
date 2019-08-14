@@ -10,6 +10,8 @@
 
 @interface MyUpdateAlertView ()
 
+@property (nonatomic,strong) UILabel *titleLb;
+
 @end
 
 @implementation MyUpdateAlertView
@@ -29,6 +31,13 @@
 
 
 - (void)configSubView{
+    
+    self.titleLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, self.frame.size.width, 40)];
+    self.titleLb.textAlignment = NSTextAlignmentCenter;
+    self.titleLb.backgroundColor = [UIColor whiteColor];
+
+    [self addSubview:self.titleLb];
+    
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn1 setBackgroundColor:[UIColor whiteColor]];
@@ -55,6 +64,11 @@
         self.actionBlock(sender);
     }
     
+}
+
+- (void)setTitle:(NSString *)title{
+    _title = title;
+    self.titleLb.text = title;
 }
 
 - (void)dealloc{

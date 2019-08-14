@@ -14,4 +14,6 @@ typedef void(^MySuperSearchAlertViewActionBlock)(UIButton *sender);
 
 @property (nonatomic,copy) MySuperSearchAlertViewActionBlock actionBlock;
 
+@property (nonatomic,strong) NSString *title;
+
 @end

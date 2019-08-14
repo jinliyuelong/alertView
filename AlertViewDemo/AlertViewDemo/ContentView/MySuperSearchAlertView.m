@@ -8,6 +8,12 @@
 
 #import "MySuperSearchAlertView.h"
 
+@interface MySuperSearchAlertView ()
+
+@property (nonatomic,strong) UILabel *titleLb;
+
+@end
+
 @implementation MySuperSearchAlertView
 
 
@@ -26,6 +32,12 @@
 
 
 - (void)configSubView{
+    
+    self.titleLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, self.frame.size.width, 40)];
+    self.titleLb.backgroundColor = [UIColor whiteColor];
+    self.titleLb.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.titleLb];
+    
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn1 setBackgroundColor:[UIColor whiteColor]];
@@ -48,6 +60,11 @@
 
 - (void)dealloc{
     NSLog(@"%@ dealloc.", NSStringFromClass([self class]));
+}
+
+- (void)setTitle:(NSString *)title{
+    _title = title;
+    self.titleLb.text = title;
 }
 
 @end

@@ -15,5 +15,7 @@ typedef void(^MyUpdateAlertViewActionBlock)(UIButton *sender);
 
 @property (nonatomic,copy) MyUpdateAlertViewActionBlock actionBlock;
 
+@property (nonatomic,strong) NSString *title;
+
 @end
 
