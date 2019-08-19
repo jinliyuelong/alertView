@@ -9,6 +9,7 @@
 #import "MyTabbarViewController.h"
 
 #import "MyViewController.h"
+#import "LoadingViewController.h"
 
 
 @interface MyTabbarViewController ()
@@ -28,7 +29,11 @@
     
     MyViewController *controller = [[MyViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:controller];
-    self.viewControllers = @[navi,navi];
+    
+    LoadingViewController *loadingController = [[LoadingViewController alloc] init];
+    UINavigationController *loadingNavi = [[UINavigationController alloc] initWithRootViewController:loadingController];
+
+    self.viewControllers = @[navi,loadingNavi];
 }
 
 

@@ -17,6 +17,9 @@
 		9E6DAA582301623400AEF452 /* MyAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DAA572301623400AEF452 /* MyAdvertisementView.m */; };
 		9E6DAA5B2301625300AEF452 /* MySuperSearchAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DAA5A2301625300AEF452 /* MySuperSearchAlertView.m */; };
 		9EFBEB3B23016ECE00E1050B /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBEB3923016ECE00E1050B /* MyViewController.m */; };
+		9EFBEB4023044C1400E1050B /* MyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBEB3F23044C1400E1050B /* MyLoadingView.m */; };
+		9EFBEB4323044CCE00E1050B /* MyIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBEB4223044CCE00E1050B /* MyIndefiniteAnimatedView.m */; };
+		9EFBEB462304523A00E1050B /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBEB452304523A00E1050B /* LoadingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		9E6DAA5A2301625300AEF452 /* MySuperSearchAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySuperSearchAlertView.m; sourceTree = "<group>"; };
 		9EFBEB3823016ECE00E1050B /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		9EFBEB3923016ECE00E1050B /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		9EFBEB3E23044C1400E1050B /* MyLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLoadingView.h; sourceTree = "<group>"; };
+		9EFBEB3F23044C1400E1050B /* MyLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLoadingView.m; sourceTree = "<group>"; };
+		9EFBEB4123044CCE00E1050B /* MyIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		9EFBEB4223044CCE00E1050B /* MyIndefiniteAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		9EFBEB442304523A00E1050B /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		9EFBEB452304523A00E1050B /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +86,15 @@
 				9E6DAA402301419A00AEF452 /* LaunchScreen.storyboard */,
 				9E6DAA432301419A00AEF452 /* Info.plist */,
 				9E6DAA442301419A00AEF452 /* main.m */,
+				9EFBEB3D23044C0200E1050B /* LoadingView */,
 				9E6DAA52230161F800AEF452 /* ContentView */,
 				9E6DAA4E230143A000AEF452 /* AlertView */,
 				9E6DAA4B2301422400AEF452 /* MyTabbarViewController.h */,
 				9E6DAA4C2301422400AEF452 /* MyTabbarViewController.m */,
 				9EFBEB3823016ECE00E1050B /* MyViewController.h */,
 				9EFBEB3923016ECE00E1050B /* MyViewController.m */,
+				9EFBEB442304523A00E1050B /* LoadingViewController.h */,
+				9EFBEB452304523A00E1050B /* LoadingViewController.m */,
 			);
 			path = AlertViewDemo;
 			sourceTree = "<group>";
@@ -107,6 +119,17 @@
 				9E6DAA5A2301625300AEF452 /* MySuperSearchAlertView.m */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		9EFBEB3D23044C0200E1050B /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				9EFBEB3E23044C1400E1050B /* MyLoadingView.h */,
+				9EFBEB3F23044C1400E1050B /* MyLoadingView.m */,
+				9EFBEB4123044CCE00E1050B /* MyIndefiniteAnimatedView.h */,
+				9EFBEB4223044CCE00E1050B /* MyIndefiniteAnimatedView.m */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,14 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFBEB4023044C1400E1050B /* MyLoadingView.m in Sources */,
 				9E6DAA582301623400AEF452 /* MyAdvertisementView.m in Sources */,
 				9E6DAA51230143B300AEF452 /* MyBaseAlertView.m in Sources */,
 				9EFBEB3B23016ECE00E1050B /* MyViewController.m in Sources */,
+				9EFBEB4323044CCE00E1050B /* MyIndefiniteAnimatedView.m in Sources */,
 				9E6DAA4D2301422400AEF452 /* MyTabbarViewController.m in Sources */,
 				9E6DAA552301621600AEF452 /* MyUpdateAlertView.m in Sources */,
 				9E6DAA452301419A00AEF452 /* main.m in Sources */,
 				9E6DAA5B2301625300AEF452 /* MySuperSearchAlertView.m in Sources */,
 				9E6DAA372301419800AEF452 /* AppDelegate.m in Sources */,
+				9EFBEB462304523A00E1050B /* LoadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
