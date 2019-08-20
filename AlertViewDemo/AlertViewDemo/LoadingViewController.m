@@ -20,8 +20,17 @@
 
     [MyLoadingView configLoadingViewAnimationType:MyIndefiniteAnimatedViewTypeContentImg];
     [MyLoadingView showLoadingView];
+    [MyLoadingView configLoadingViewAnimationType:MyIndefiniteAnimatedViewTypeDefault];
+
+    [MyLoadingView showLoadingView];
+
     [MyLoadingView dismissLoadingViewWithDelay:2.0];
-    [self performSelector:@selector(show) withObject:nil afterDelay:2.1];
+    [self performSelector:@selector(show) withObject:nil afterDelay:2.0];
+    [MyLoadingView dismissLoadingViewWithDelay:2.0];
+
+    [self performSelector:@selector(show) withObject:nil afterDelay:2.001];
+    [MyLoadingView dismissLoadingViewWithDelay:2.0];
+
     [self performSelector:@selector(show2) withObject:nil afterDelay:10.0];
     [self performSelector:@selector(show) withObject:nil afterDelay:11.0];
 

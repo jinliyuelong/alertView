@@ -32,6 +32,8 @@
     
 }
 
+
+
 + (void)showLoadingView{
     [[self sharedLoadingView] updateLoadingView];
 }
@@ -67,14 +69,14 @@
 - (void)updateLoadingView{
     __weak MyLoadingView *weakSelf = self;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        
         __strong MyLoadingView *strongSelf = weakSelf;
+
         [[UIApplication sharedApplication].keyWindow addSubview:strongSelf];
         [strongSelf.superview bringSubviewToFront:strongSelf];
         
         [strongSelf layoutSubviews];
         [strongSelf layoutIfNeeded];
-        
+
     }];
 }
 
@@ -87,15 +89,16 @@
     
     __weak MyLoadingView *weakSelf = self;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        
+
         __strong MyLoadingView *strongSelf = weakSelf;
-        
+
         __block void (^completionBlock)(void) = ^{
             [strongSelf removeFromSuperview];
 
             if (completion) {
                 completion();
             }
+
         };
         
         if (delay > 0) {
