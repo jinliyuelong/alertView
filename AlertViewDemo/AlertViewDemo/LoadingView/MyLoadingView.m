@@ -16,6 +16,7 @@
 @property (nonatomic,strong) UIView *backgroundView;
 @property (nonatomic,strong) MyIndefiniteAnimatedView *indefiniteAnimationView;
 
+
 @end
 
 
@@ -31,7 +32,6 @@
     return loadingView;
     
 }
-
 
 
 + (void)showLoadingView{
@@ -86,7 +86,6 @@
 }
 
 - (void)dismissWithDelay:(NSTimeInterval)delay completion:(void(^)(void))completion{
-    
     __weak MyLoadingView *weakSelf = self;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 
@@ -98,7 +97,6 @@
             if (completion) {
                 completion();
             }
-
         };
         
         if (delay > 0) {
@@ -144,6 +142,7 @@
     [[self sharedLoadingView] addSubview:[self sharedLoadingView].indefiniteAnimationView];
     [[self sharedLoadingView] updateLoadingView];
 }
+
 
 
 @end

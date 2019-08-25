@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B3173B15A33E7B13080211 /* libPods-AlertViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21878AB99146904240CAD80 /* libPods-AlertViewDemo.a */; };
 		9E6DAA372301419800AEF452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DAA362301419800AEF452 /* AppDelegate.m */; };
 		9E6DAA3F2301419A00AEF452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DAA3E2301419A00AEF452 /* Assets.xcassets */; };
 		9E6DAA422301419A00AEF452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DAA402301419A00AEF452 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0088ECA26C4463CDAC2886DC /* Pods-AlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertViewDemo/Pods-AlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9E6DAA322301419800AEF452 /* AlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6DAA352301419800AEF452 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E6DAA362301419800AEF452 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		9EFBEB4223044CCE00E1050B /* MyIndefiniteAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		9EFBEB442304523A00E1050B /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		9EFBEB452304523A00E1050B /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		C21878AB99146904240CAD80 /* libPods-AlertViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlertViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EBA7384DE102D99048368E /* Pods-AlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertViewDemo/Pods-AlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B3173B15A33E7B13080211 /* libPods-AlertViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E5344A8A7BEAB29C4A4C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C21878AB99146904240CAD80 /* libPods-AlertViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56A465BA5BDDF2331EFDD199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6EBA7384DE102D99048368E /* Pods-AlertViewDemo.debug.xcconfig */,
+				0088ECA26C4463CDAC2886DC /* Pods-AlertViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9E6DAA292301419800AEF452 = {
 			isa = PBXGroup;
 			children = (
 				9E6DAA342301419800AEF452 /* AlertViewDemo */,
 				9E6DAA332301419800AEF452 /* Products */,
+				56A465BA5BDDF2331EFDD199 /* Pods */,
+				12E5344A8A7BEAB29C4A4C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E6DAA482301419A00AEF452 /* Build configuration list for PBXNativeTarget "AlertViewDemo" */;
 			buildPhases = (
+				9D69C9479E0C7BD9FCCC0E9E /* [CP] Check Pods Manifest.lock */,
 				9E6DAA2E2301419800AEF452 /* Sources */,
 				9E6DAA2F2301419800AEF452 /* Frameworks */,
 				9E6DAA302301419800AEF452 /* Resources */,
@@ -195,6 +220,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D69C9479E0C7BD9FCCC0E9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlertViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E6DAA2E2301419800AEF452 /* Sources */ = {
@@ -343,6 +389,7 @@
 		};
 		9E6DAA492301419A00AEF452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EBA7384DE102D99048368E /* Pods-AlertViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -361,6 +408,7 @@
 		};
 		9E6DAA4A2301419A00AEF452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0088ECA26C4463CDAC2886DC /* Pods-AlertViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

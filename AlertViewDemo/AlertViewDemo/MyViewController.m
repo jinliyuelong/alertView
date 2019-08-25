@@ -42,6 +42,9 @@
     [self showSerialQueueAlertViewCompletion:^(BOOL finished) {
         NSLog(@"执行完毕");
     }];
+    [self showSerialQueueAlertViewCompletion:^(BOOL finished) {
+        NSLog(@"执行完毕");
+    }];
 }
 
 
